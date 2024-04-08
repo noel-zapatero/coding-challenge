@@ -1,0 +1,5 @@
+<div>
+	<ul>
+		<li *ngFor="let city of cities" [value]="city.fullName" (click)="showWeather(city.code)">{{city.fullName}}</li>
+	</ul>
+</div>
